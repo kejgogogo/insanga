@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<meta name="description" content="9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta name="naver-site-verification" content="d25e26ce1709b5f750a575abe33b2948797d1591">
+<meta property="og:type" content="website">
+<meta property="og:title" content="인산가 본사 쇼핑몰 ">
+<meta property="og:description" content="120년 건강본가 인산가, 9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta property="og:image" content="http://m.insanlife.com/images/default/logo.png">
+<meta property="og:url" content="http://m.insanlife.com">
+<title>인산가 본사 쇼핑몰 </title>
+<link rel="stylesheet" href="../common/css/default.css" type="text/css">
+<link rel="stylesheet" href="../common/css/layout.css" type="text/css">
+<script src="../common/js/jquery-3.4.1.min.js"></script>
+<script src="../common/js/scroll.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="gnb">
+				<h1><a href="../main/main.html" class="insanga-logo">인산가로고</a></h1>
+				<a href="#category" class="gnb-category">전체카테고리 보기</a>
+				<div id="gnbBtnArea">
+					<a href="#searchForm" id="search" class="gnb-search">검색</a>
+					<a href="#cart" id="" class="gnb-cart">
+						<span class="none">장바구니</span>
+						<em id="" class="gnb-cart-cnt">3</em>
+					</a> 
+				</div>
+			</div>
+			<hgroup>
+				<a href="javascript:history.back();" class="back_btn">뒤로가기</a>
+				<h2>로그인</h2>
+			</hgroup>
+		</header>
+		<div id="contents">
+			<div class="tabBox">
+				<ul class="tabs">
+					<li class="tab-link active" data-tab="tab-1">
+						<a href="#">회원 로그인</a>
+					</li>
+					<li class="tab-link" data-tab="tab-2">
+						<a href="#">비회원 로그인</a>
+					</li>
+				</ul>
+			</div>
+			<div id="tab-1" class="tab-content active">
+				<fieldset>
+					<div class="login-box">
+						<div class="input-box">
+							<input name="userid" title="아이디" type="text" class="wid100" placeholder="아이디"/>
+						</div>
+						<div class="input-box">
+							<input name="userpw" title="비밀번호" type="password" class="wid100" placeholder="비밀번호"/>
+						</div>
+					</div>
+					<div class="login-auto">
+						<input type="checkbox" id="auto_login" name="auto_login" value="Y" class="input"/>
+						<label for="auto_login" class="label">자동 로그인</label>
+					</div>
+					<div class="login-button">
+						<button type="submit" class="wid100" id="login">로그인</button>
+					</div>
+				</fieldset>
+				<div class="idpw_area">
+					<a href="#" class="idpw_search">아이디 찾기</a>
+					<a href="#" class="idpw_search">비밀번호 찾기</a>
+				</div>
+				<div class="login_simple">
+					<h2>간편 로그인</h2>
+					<ul>
+						<li>
+              <a href="#" onclick="oAuthLogin('kakao', null, 'http://insanlife.com')"><span class="sns_kakao">카카오로 로그인</span></a>
+            </li>
+            <li>
+              <a href="#" onclick="oAuthLogin('naver', null, 'http://insanlife.com')"><span class="sns_naver">네이버로 로그인</span></a>
+            </li> 
+            <li>
+              <a href="#" onclick="oAuthLogin('facebook', null, 'http://insanlife.com')"><span class="sns_facebook">페이스북으로 로그인</span></a>
+            </li>
+            <li>
+            	<a href="#" onclick="oAuthLogin('payco', null, 'http://insanlife.com')"><span class="sns_payco">페이코로 로그인</span></a>
+            </li>
+            <li>
+              <a href="#" onclick="oAuthLogin('apple', null, 'http://insanlife.com')"><span class="sns_apple">애플로 로그인</span></a>
+            </li>
+          </ul>
+				</div>
+				<div class="join-button mt10">
+					<button type="submit" class="type01 wid100" id="login">회원가입</button>
+					<button type="submit" class="type05 wid100 mt10" id="login">비회원 주문하기</button>
+				</div>
+			</div>
+			<div id="tab-2" class="tab-content">
+				<fieldset>
+					<div class="login-box">
+							<div class="input-box">
+								<input name="user_name" id="user_name" title="주문자명" type="text" class="wid100" placeholder="주문자명"/>
+							</div>
+							<div class="input-box">
+								<input name="user_number" id="user_number" title="주문번호" type="text" class="wid100" placeholder="주문번호"/>
+							</div>
+							<div class="input-box">
+								<input name="user_tel" id="user_tel" title="연락처" type="text" class="wid100" placeholder="연락처"/>
+							</div>
+						</div>
+					<div class="login-button mt20">
+						<button type="submit" class="wid100" id="login">주문조회</button>
+					</div>
+					<div class="join-button">
+						<button type="submit" class="type03 wid100" id="login">회원가입</button>
+					</div>
+				</fieldset>
+			</div>
+		</div>
+	</div>
+	<script>
+	$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('active');
+		$('.tab-content').removeClass('active');
+
+		$(this).addClass('active');
+		$("#"+tab_id).addClass('active');
+	})
+
+})
+</script>
+</body>
+

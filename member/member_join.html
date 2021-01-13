@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<meta name="description" content="9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta name="naver-site-verification" content="d25e26ce1709b5f750a575abe33b2948797d1591">
+<meta property="og:type" content="website">
+<meta property="og:title" content="인산가 본사 쇼핑몰 ">
+<meta property="og:description" content="120년 건강본가 인산가, 9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta property="og:image" content="http://m.insanlife.com/images/default/logo.png">
+<meta property="og:url" content="http://m.insanlife.com">
+<title>인산가 본사 쇼핑몰 </title>
+<link rel="stylesheet" href="../common/css/default.css" type="text/css">
+<link rel="stylesheet" href="../common/css/layout.css" type="text/css">
+<script src="../common/js/jquery-3.4.1.min.js"></script>
+<script src="../common/js/scroll.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="gnb">
+				<h1><a href="../main/main.html" class="insanga-logo">인산가로고</a></h1>
+				<a href="#category" class="gnb-category">전체카테고리 보기</a>
+				<div id="gnbBtnArea">
+					<a href="#searchForm" id="search" class="gnb-search">검색</a>
+					<a href="#cart" id="" class="gnb-cart">
+						<span class="none">장바구니</span>
+						<em id="" class="gnb-cart-cnt">3</em>
+					</a> 
+				</div>
+			</div>
+			<hgroup>
+				<a href="javascript:history.back();" class="back_btn">뒤로가기</a>
+				<h2>회원가입</h2>
+			</hgroup>
+		</header>
+		<div id="contents">
+			<div class="member_join">
+				<dl>
+					<dt>이름</dt>
+					<dd><input type="text" placeholder="이름을 입력해 주세요." name="nm_member" value="" id="nm_member" maxlength="20"/></dd>
+				</dl>
+				<dl>
+					<dt>아이디</dt>
+					<dd><input type="text" placeholder="띄어쓰기 없이, 영문/숫자 6~15자리" name="id_shop" value="" id="id_shop" readonly="readonly" onclick="openidPopup();"/></dd>
+				</dl>
+				<dl>
+					<dt>비밀번호</dt>
+					<dd><input type="password" placeholder="대소문자 구별, 영문숫자 혼합하여 6~13자리 입력" name="passwd" id="passwd" value="" maxlength="20"/> <input type="password" name="passwd_re" placeholder="비밀번호를 한번 더 입력해 주세요." id="passwd_re" value="" maxlength="20" class="mt10"/></dd>
+				</dl>
+				<dl>
+					<dt>휴대전화</dt>
+					<dd>
+						<div class="flex">
+							<select name="NO_TEL1" id="NO_TEL1" class="wid40 mr5">
+								<option value="">선택</option>
+								<option value="010"> 010</option>
+								<option value="011"> 011</option>
+								<option value="016"> 016</option>
+								<option value="017"> 017</option>
+								<option value="018"> 018</option>
+								<option value="019"> 019</option>
+								<option value="070"> 070</option>
+							</select>
+							<input type="tel" name="NO_TEL2" id="NO_TEL2" value="" maxlength="8" placeholder="-없이 숫자만 입력">
+						</div>
+						<button type="submit" class="type04 wid100 mt5" id="login">인증번호 요청</button>
+						<div class="form-group mt5">
+							<span class="c-input-outline">
+								<input type="text" id="userId" placeholder="인증번호를 입력해 주세요." title="인증번호" class="input" value="" required=""/>
+								<span class="input-side">
+									2:59
+								</span>
+							</span>
+            </div>
+            <button type="submit" class="type04 wid100 mt5" id="login">인증번호 확인</button>
+					</dd>
+				</dl>
+				<dl>
+					<dt>이메일</dt>
+					<dd class="flex"><input type="text" name="email" value="" title="이메일" id="email"/> <span class="mail">@</span> <input type="text" name="email-1" value="" id="email-1"/></dd>
+				</dl>
+				<dl>
+					<dt>생년월일</dt>
+					<dd class="flex">
+						<select name="birth-year" id="birth-year" class="wid30">
+							<option value="">선택</option>
+							<option value="1980">1980</option>
+							<option value="1979">1979</option>
+							<option value="1978">1978</option>
+							<option value="1977">1977</option>
+							<option value="1976">1976</option>
+							<option value="1975">1975</option>
+							<option value="1974">1974</option>
+						</select><span class="birth">년</span>
+						<select name="birth-year" id="birth-year" class="wid30">
+							<option value="">선택</option>
+							<option value="1">01</option>
+							<option value="2">02</option>
+							<option value="3">03</option>
+							<option value="4">09</option>
+							<option value="5">05</option>
+							<option value="6">06</option>
+							<option value="7">07</option>
+							<option value="8">08</option>
+							<option value="9">09</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+						</select><span class="birth">월</span>
+						<select name="birth-year" id="birth-year" class="wid30">
+							<option value="">선택</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+						</select><span class="birth">일</span>
+					</dd>
+				</dl>
+				<dl>
+					<dt>성별</dt>
+					<dd class="gender">
+						<label class="mr20"><input type="radio" name="FG_SEX" value="100" checked="">&nbsp;남자</label> 
+						<label><input type="radio" name="FG_SEX" value="200">&nbsp;여자</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt>수신동의</dt>
+					<dd class="gender">
+						<label class="mr20"><input type="checkbox" name="FG_SEX" value="100" checked="">&nbsp;SMS</label> 
+						<label><input type="checkbox" name="FG_SEX" value="200">&nbsp;이메일</label>
+					</dd>
+				</dl>
+				<dl>
+					<dt>월간지 수신</dt>
+					<dd>
+						<div class="input_area">
+							<label class="mr20"><input type="radio" name="FG_SEX" value="100" checked="">&nbsp;받음</label> 
+							<label><input type="radio" name="FG_SEX" value="200">&nbsp;받지않음</label>
+						</div>
+						<div class="flex mt10">
+							<button type="submit" style="width:130px" class="type04 mr5" id="login">주소찾기</button>
+							<input type="text" name="zio-code" value="" title="우편번호" id="address01" readonly />
+						</div>
+						<input class="mt10" type="text" name="address01" value="" title="주소" id="address01" readonly/>
+						<input class="mt10" type="text" name="address02" value="" title="상세주소" id="address02"/>
+					</dd>
+				</dl>
+				<dl>
+					<dt>평생회원<br/>가입</dt>
+					<dd>
+						<div class="input_area">
+							<label class="mr20"><input type="radio" name="FG_SEX" value="100" checked="">&nbsp;동의함</label> 
+							<label><input type="radio" name="FG_SEX" value="200">&nbsp;동의안함</label>
+						</div>
+						<p class="mt5">
+							※ 평생회원으로 가입하션 인산가 회원 탈퇴 시 까지는 휴면회원으로 전환되지 않으며, 고객님의 개인정보가 탈퇴시까지 안전하게 보관됩니다.
+						</p>
+						<p class="mt10">
+							※ 평생회원 동의 시 5천원 할인쿠폰이 발급됩니다.<br/>(유효기간 : 발급 후 30일)
+						</p>
+					</dd>
+				</dl>
+				<dl>
+					<dt>추천인</dt>
+					<dd class="flex">
+						<input type="text" name="zio-code" value="" title="추천인" id="address01" class="mr5" readonly />
+						<button type="submit" style="width:130px" class="type04 mr5" id="login">조회</button>
+					</dd>
+				</dl>
+			</div>
+			<div class="termsAgree" style="display:">
+				<div class="Box2">
+					<p class="Allcheck">
+						<input type="checkbox" class="" value="" id="check_allagree">
+						<label for="check_allagree">전체 동의</label>
+					</p>
+					<ul>
+						<li>
+							<input type="checkbox" name="agree" class="" value="" id="agr1">
+							<label for="agr1">(<font color="red">필수</font>) 이용약관 동의</label>
+							<a href="javascript:;" class="btnAll" id="terms_interparkbtn">전문보기</a>
+						</li>
+						<li>
+							<input type="checkbox" name="agree" class="" value="" id="agr2">
+							<label for="agr2">(<font color="red">필수</font>) 개인정보 수집 및 이용에 대한 동의</label>
+							<a href="javascript:;" class="btnAll" id="terms_efinancebtn">전문보기</a>
+						</li>
+						<li>
+							<input type="checkbox" name="agree" class="" value="" id="agr3">
+							<label for="agr3">(<font color="red">필수</font>) 개인정보 처리 위탁 동의</label>
+							<a href="javascript:;" class="btnAll" id="terms_privacybtn">전문보기</a>
+						</li>
+						<li>
+							<input type="checkbox" name="agr28" class="" value="" id="agr28">
+							<label for="agr28">(선택) 개인정보 처리 위탁 동의</label>
+							<a href="javascript:;" class="btnAll" id="terms_privacybtn2">전문보기</a>
+						</li>
+						<li>
+							<input type="checkbox" name="agr40" class="" value="" id="agr40">
+							<label for="agr40">위치기반서비스 이용약관 (선택)</label>
+							<a href="javascript:;" class="btnAll" id="terms_location">전문보기</a>
+						</li>
+					</ul>
+					
+				</div>
+			</div>
+			<div class="join-button mt10">
+				<button type="submit" class="type01 wid100" id="login">회원가입</button>
+			</div>
+		</div>
+	</div>
+</body>
+

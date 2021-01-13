@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<meta name="description" content="9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta name="naver-site-verification" content="d25e26ce1709b5f750a575abe33b2948797d1591">
+<meta property="og:type" content="website">
+<meta property="og:title" content="인산가 본사 쇼핑몰 ">
+<meta property="og:description" content="120년 건강본가 인산가, 9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta property="og:image" content="http://m.insanlife.com/images/default/logo.png">
+<meta property="og:url" content="http://m.insanlife.com">
+<title>인산가 본사 쇼핑몰 </title>
+<link rel="stylesheet" href="../common/css/default.css" type="text/css">
+<link rel="stylesheet" href="../common/css/layout.css" type="text/css">
+<link rel="stylesheet" href="../common/css/xeicon.min.css" type="text/css">
+<script src="../common/js/jquery-3.4.1.min.js"></script>
+<script src="../common/js/scroll.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="gnb">
+				<h1><a href="../main/main.html" class="insanga-logo">인산가로고</a></h1>
+				<a href="#category" class="gnb-category">전체카테고리 보기</a>
+				<div id="gnbBtnArea">
+					<a href="#searchForm" id="search" class="gnb-search">검색</a>
+					<a href="#cart" id="" class="gnb-cart">
+						<span class="none">장바구니</span>
+						<em id="" class="gnb-cart-cnt">3</em>
+					</a> 
+				</div>
+			</div>
+			<hgroup>
+				<a href="javascript:history.back();" class="back_btn">뒤로가기</a>
+				<h2>아이디 찾기</h2>
+			</hgroup>
+		</header>
+		<div id="contents">
+			<div class="info_area">
+				<div class="text_box">
+					<ul>
+						<li>가입하신 휴대전화번호 또는 이메일로 아이디를 찾을 수 있습니다.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="login_normal mt10 pb0">
+				<h2>아이디 찾기</h2>
+			</div>
+			<ul id="menus"> 
+				<li class="release-header"><a href="#" onclick="showMenu(1); return false;">회원정보에 등록된 휴대전화로 인증</a></li> 
+				<ul id="submenu1" class="submenu" style="display:block"> 
+					<li>
+						<input type="text" name="name" value="" title="이름" id="name" placeholder="이름을 입력해 주세요.">
+						<div class="flex mt10">
+							<select name="NO_TEL1" id="NO_TEL1" class="wid40 mr5">
+								<option value="">선택</option>
+								<option value="010"> 010</option>
+								<option value="011"> 011</option>
+								<option value="016"> 016</option>
+								<option value="017"> 017</option>
+								<option value="018"> 018</option>
+								<option value="019"> 019</option>
+								<option value="070"> 070</option>
+							</select>
+							<input type="tel" name="NO_TEL2" id="NO_TEL2" value="" maxlength="8" placeholder="-없이 숫자만 입력">
+						</div>
+					</li> 
+				</ul> 
+				<li class="release-header"><a href="#" onclick="showMenu(2); return false;">본인확인 이메일로 인증</a></li> 
+				<ul id="submenu2" class="submenu" style="display:none"> 
+					<li>
+						<input type="text" name="name" value="" title="이름" id="name2" placeholder="이름을 입력해 주세요.">
+						<input type="number" class="mt10" name="birth" value="" title="생년월일" id="birth" placeholder="생년월일 8자리를 입력해주세요. ex) 199801201" maxlength="8">
+						<div class="flex mt10">
+							<input type="text" name="email" value="" title="이메일" id="email"> <span class="mail">@</span> <input type="text" name="email-1" value="" id="email-1">
+						</div>
+					</li>  
+				</ul>  
+			</ul>
+			<div class="join-button mt10">
+				<button type="submit" class="type01 wid100" id="login">아이디 찾기</button>
+			</div>
+			<script type="text/javascript"> 
+				function showMenu(idx){ 
+					for(i=1;i<3;i++){ document.getElementById("submenu"+i).style.display="none"; }
+					 document.getElementById("submenu"+idx).style.display="block"; }
+			</script>
+		</div>
+	</div>
+</body>
+
