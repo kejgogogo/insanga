@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="us">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery UI Example Page</title>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( "#datepicker" ).datepicker({
+        showOn: "button",
+        buttonImage: "../images/ico/icon_calendar.gif",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+
+    });
+
+});
+  </script>
+</head>
+<body>
+	<!-- 시작시 기본 날짜 설정은 value를 이용 -->
+	<div style="border:1px solid #ddd;display:inline-block;padding:3px 5px 0">
+		<input type="text" id="datepicker" style="border:none;height:30px">
+	</div>
+</body>
+</html>

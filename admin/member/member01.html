@@ -1,0 +1,651 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "//www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="//www.w3.org/1999/xhtml" xml:lang="ko" lang="ko">
+<head>
+    <!-- End Google Tag Manager -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Web Manual</title>
+  <link rel="stylesheet" type="text/css" href="../css/layout.css" />
+  <script src="../js/jquery-3.4.1.min.js"></script>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="../js/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    var dateFormat = "yy/mm/dd",
+      from = $( ".from" )
+        .datepicker({
+          defaultDate: "+1w",
+          changeMonth: true,
+          numberOfMonths: 1,
+          showOn: "button",
+          buttonImage: "../images/ico/icon_calendar.gif",
+          buttonImageOnly: true,
+          buttonText: "Select date"
+        })
+        .on( "change", function() {
+          to.datepicker( "option", "minDate", getDate( this ) );
+        }),
+      to = $( ".to" ).datepicker({
+        defaultDate: "+1w",
+        changeMonth: true,
+        numberOfMonths: 1,
+        showOn: "button",
+        buttonImage: "../images/ico/icon_calendar.gif",
+        buttonImageOnly: true,
+        buttonText: "Select date"
+      })
+      .on( "change", function() {
+        from.datepicker( "option", "maxDate", getDate( this ) );
+      });
+ 
+    function getDate( element ) {
+      var date;
+      try {
+        date = $.datepicker.parseDate( dateFormat, element.value );
+      } catch( error ) {
+        date = null;
+      }
+ 
+      return date;
+    }
+  } );
+  </script>
+</head>
+<body>
+<div id="skipNavigation">
+  <p>
+    <a href="#sidebar">메뉴 바로가기</a>
+    <a href="#contents">본문 바로가기</a>
+  </p>
+</div>
+<hr class="layout" />
+<!-- wrap -->
+<div id="wrap">
+  <!-- header -->
+  <div id="header" >
+    <div class="inner">
+    	<h1><a href="/"><img src="../images/header/logo.png" alt="인산사 쇼핑몰"/></a></h1>
+    	<div style="display:inline-block;margin-left:230px;color:#fff;padding-top:25px;font-size:18px"><strong>홍길동</strong>님 접속시간 2020.12.20 15:30:00</div>
+    	<div class="header_right mt30">쇼핑몰 바로가기 <a href="#">PC</a> <a href="#">Mobile</a></div>
+    </div>
+  </div><!-- //header -->
+  <hr class="layout" />
+    <!-- container -->
+  <div id="container" style="">
+    <div id="sidebar">
+      <ul class="menu">
+        <li class="expandable" id="SH_BI">
+          <a href="#">시스템관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_BI_SI">
+                <a href="#">- 사이트</a>
+            </li>
+            <li class="" id="SH_BI_PW">
+                <a href="#">- 메뉴코드</a>
+            </li>
+            <li class="" id="SH_BI_MD">
+                <a href="#">- 배치관리</a>
+            </li>
+            <li class="" id="SH_BI_AU">
+                <a href="#">- 회원등급</a>
+            </li>
+            <li class="" id="SH_BI_OT">
+                <a href="#">- 마일리지</a>
+            </li>
+            <li class="" id="SH_BI_PI">
+                <a href="#">- 관리자</a>
+            </li>
+            <li class="" id="SH_BI_PI">
+                <a href="#">- 권한관리</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_OP">
+          <a href="#">회원관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_OP_OS">
+                <a href="#">- 회원현황</a>
+            </li>
+            <li class="" id="SH_OP_OM">
+                <a href="#">- 휴면회원</a>
+            </li>
+            <li class="" id="SH_OP_OC">
+                <a href="#">- 탈퇴회원</a>
+            </li>
+            <li class="" id="SH_OP_RF">
+                <a href="#">- 마일리지관리</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">상품관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 카테고리관리</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 상품관리</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 상품등록</a>
+            </li>
+            <li class="" id="SH_PA_PG">
+              <a href="#">- 공통템플릿</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">혜택관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 사은품/샘플</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 쿠폰</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 프로모션코드</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">전시관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 상품전시</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 배너관리</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 팝업관리</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 기획전</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 이벤트</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 타임딜</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 추천검색어</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">주문관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 주문내역</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 주문취소</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 교환관리</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 반품관리</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">게시판관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 제품제조과정</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 제품검사성적서</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 인산레시피</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 인산의학 구독신청</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">고객센터관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 공지사항</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 1:1문의내역</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 자주묻는 질문</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 상품후기</a>
+            </li>
+            <li class="" id="SH_PA_DE">
+              <a href="#">- 매장관리</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">푸쉬알림</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 발송예약</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 발송현황</a>
+            </li>
+          </ul>
+        </li>
+        <li class="expandable" id="SH_PA">
+          <a href="#">통계관리</a>
+          <ul class="depth2">
+            <li class="" id="SH_PA_PM">
+              <a href="#">- 매출통계</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 결제수단별매출</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 상품별매출</a>
+            </li>
+            <li class="" id="SH_PA_WB">
+              <a href="#">- 회원통계</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      <script>
+        $(document).ready(function(){
+            $(".expandable>a").click(function(){
+                var submenu = $(this).next("ul");
+                if( submenu.is(":visible") ){
+                    submenu.slideUp();
+                }else{
+                    submenu.slideDown();
+                }
+            });
+        });
+      </script>
+    </div>
+    <div id="contents">
+      <div class="headingArea">
+        <div class="mTitle">
+            <h1>회원현황</h1>
+        </div>
+      </div>
+      <div class="mManual">
+      	<div class="wid100">
+          <table class="board_tbl type01">
+          	<caption>적립정책 목록</caption>
+          	<colgroup>
+          		<col style="width:15%"/>
+          		<col style="width:35%"/>
+          		<col style="width:15%"/>
+          		<col style="*"/>
+          	</colgroup>
+          	<tbody>
+          		<tr>
+                <th>가입사이트</th>
+          			<td>
+                  <select name="NO_TEL1" id="NO_TEL1" class="wid100 mr5">
+                    <option value="0">인산가 쇼핑몰</option>
+                    <option value="1"> 인산가 씨실</option>
+                    <option value="2"> 인산가 본사</option>
+                  </select>
+                </td>
+                <th>평생회원여부</th>
+                <td>
+                  <input type="radio" name="me01" id="inlineRadio1" value="option1"/>
+                  <label for="inlineRadio1" class="checkbox-inline">
+                    전체
+                  </label>
+                  <input type="radio" name="me01" id="inlineRadio2" value="option2"/>
+                  <label for="inlineRadio2" class="checkbox-inline">
+                    일반회원
+                  </label>
+                  <input type="radio" name="me01" id="inlineRadio3" value="option3"/>
+                  <label for="inlineRadio3" class="checkbox-inline">
+                    평생회원
+                  </label>
+                </td>
+          		</tr>
+              <tr>
+                <th>회원등급</th>
+                <td>
+                  <input type="radio" name="me02" id="inlineRadio4" value="option1"/>
+                  <label for="inlineRadio4" class="checkbox-inline">
+                    전체
+                  </label>
+                  <input type="radio" name="me02" id="inlineRadio5" value="option2"/>
+                  <label for="inlineRadio5" class="checkbox-inline">
+                    일반회원
+                  </label>
+                  <input type="radio" name="me02" id="inlineRadio6" value="option3"/>
+                  <label for="inlineRadio6" class="checkbox-inline">
+                    힐링클럽회원
+                  </label>
+                </td>
+                <th>가입경로</th>
+                <td>
+                  <input type="radio" name="me03" id="inlineRadio7" value="option1">
+                  <label for="inlineRadio7" class="checkbox-inline">
+                    전체
+                  </label>
+                  <input type="radio" name="me03" id="inlineRadio8" value="option2">
+                  <label for="inlineRadio8" class="checkbox-inline">
+                    PC
+                  </label>
+                  <input type="radio" name="me03" id="inlineRadio9" value="option3">
+                  <label for="inlineRadio9" class="checkbox-inline">
+                    Mobile
+                  </label>
+                  <input type="radio" name="me03" id="inlineRadio10" value="option3">
+                  <label for="inlineRadio10" class="checkbox-inline">
+                    App
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>수신동의</th>
+                <td>
+                  <input type="radio" name="me04" id="inlineRadio11" value="option1">
+                  <label for="inlineRadio11" class="checkbox-inline">
+                    전체
+                  </label>
+                  <input type="radio" name="me04" id="inlineRadio12" value="option2">
+                  <label for="inlineRadio12" class="checkbox-inline">
+                    SMS
+                  </label>
+                  <input type="radio" name="me04" id="inlineRadio13" value="option3">
+                  <label for="inlineRadio13" class="checkbox-inline">
+                    이메일
+                  </label>
+                </td>
+                <th>월간지수신</th>
+                <td>
+                  <input type="radio" name="me05" id="inlineRadio14" value="option1">
+                  <label for="inlineRadio14" class="checkbox-inline">
+                    전체
+                  </label>
+                  <input type="radio" name="me05" id="inlineRadio15" value="option2">
+                  <label for="inlineRadio15" class="checkbox-inline">
+                    받음
+                  </label>
+                  <input type="radio" name="me05" id="inlineRadio16" value="option3">
+                  <label for="inlineRadio16" class="checkbox-inline">
+                    받지않음
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>지역(기본배송지)</th>
+                <td>
+                  <select name="NO_TEL1" id="NO_TEL1" class="wid40">
+                    <option value="0">서울</option>
+                    <option value="1">경기</option>
+                    <option value="2">대전</option>
+                  </select>
+                </td>
+                <th>성별</th>
+                <td>
+                  <input type="radio" name="me06" id="inlineRadio17" value="option1">
+                  <label for="inlineRadio17" class="checkbox-inline">
+                    남
+                  </label>
+                  <input type="radio" name="me06" id="inlineRadio18" value="option2">
+                  <label for="inlineRadio18" class="checkbox-inline">
+                    여
+                  </label>
+                  <input type="radio" name="me06" id="inlineRadio19" value="option3">
+                  <label for="inlineRadio19" class="checkbox-inline">
+                    미등록
+                  </label>
+                </td>
+              </tr>
+              <tr>
+                <th>나이</th>
+                <td><input type="text" class="wid30" name="" id="" title="나이시작" /> <span>~</span> <input type="text" class="wid30" name="" id="" title="나이끝" /><span> 세</span></td>
+                <th>생일</th>
+                <td>
+                  <div class="date_box">
+                    <label for="from">From</label>
+                    <input type="text" class="from" id="from1" name="from1">
+                  </div>
+                  <span>~</span> 
+                  <div class="date_box">
+                    <label for="to">to</label>
+                    <input type="text" class="to" id="to1" name="to1">
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th>가입일/최근로그인</th>
+                <td colspan="3">
+                  <select name="NO_TEL1" id="NO_TEL1" class="wid20">
+                    <option value="0">가입일</option>
+                    <option value="1">최근로그인</option>
+                  </select>
+                  <div class="date_box">
+                    <label for="from">From</label>
+                    <input type="text" class="from" id="from2" name="from1">
+                  </div>
+                  <span>~</span> 
+                  <div class="date_box">
+                    <label for="to">to</label>
+                    <input type="text" class="to" id="to2" name="to1">
+                  </div>
+                </td>
+              </tr>
+          	</tbody>
+          </table>
+        </div>
+        <div class="wid100">
+          <table class="board_tbl type01">
+            <caption>적립정책 목록</caption>
+            <colgroup>
+              <col style="width:15%"/>
+              <col style="width:35%"/>
+              <col style="width:15%"/>
+              <col style="*"/>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>주문일/결제일</th>
+                <td colspan="3">
+                  <select name="NO_TEL1" id="NO_TEL1" class="wid20">
+                    <option value="0">주문일</option> 
+                    <option value="1">결제일</option>
+                  </select>
+                  <div class="date_box">
+                    <label for="from">From</label>
+                    <input type="text" class="from" id="from3" name="from1"/>
+                  </div>
+                  <span>~</span> 
+                  <div class="date_box">
+                    <label for="to">to</label>
+                    <input type="text" class="to" id="to3" name="to1">
+                  </div>
+                  <input type="checkbox" id="inlineCheckbox1" value="option1"/>
+                  <label for="inlineCheckbox1" class="checkbox-inline">
+                    회원가입 후 첫 주문만 검색
+                  </label>
+                  <input type="checkbox" id="inlineCheckbox2" value="option2"/>
+                  <label for="inlineCheckbox2" class="checkbox-inline">
+                    제외처리
+                  </label>
+                </td>
+              </tr>
+             <tr>
+                <th>구매금액</th>
+                <td>
+                  <select name="NO_TEL1" id="NO_TEL1" class="wid30">
+                    <option value="0">구매금액</option> 
+                    <option value="1">건수</option>
+                  </select>
+                  <input type="text" class="wid25" name="" id="" title="금액시작" /> <span>~</span> <input type="text" class="wid25" name="" id="" title="금액끝" /><span> 원/건</span>
+                </td>
+                <th>주문상품</th>
+                <td style="vertical-align:middle">
+                   <input type="text" class="wid50 mr5" name="" id="" title="금액시작" style="min-width:250px"/><button type="submit" class="type02" id="">상품검색</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="wid100">
+          <table class="board_tbl type01">
+            <caption>적립정책 목록</caption>
+            <colgroup>
+              <col style="width:15%"/>
+              <col style="width:35%"/>
+              <col style="width:15%"/>
+              <col style="*"/>
+            </colgroup>
+            <tbody>
+              <tr>
+                <th>검색어</th>
+                <td colspan="3">
+                  <select name="NO_TEL1" id="NO_TEL1" class="wid10">
+                    <option value="0">이름</option> 
+                    <option value="1">아이디</option>
+                    <option value="2">이메일</option>
+                    <option value="3">휴대전화</option>
+                    <option value="4">회원번호</option>
+                    <option value="5">추천인</option>
+                  </select>
+                  <input type="text" class="wid40" name="" id="" title="검색어" />
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="btn_area"><button type="submit" class="type04 green" id="">조회</button></div>
+        <div class="wid100 mt60" style="overflow-x:auto ">
+          <div class="m_count">[전체회원 : 9,999,999명]  검색결과 <span class="red">9,999</span>명 <button type="submit" class="type02 ml10" id="">엑셀다운</button> <button type="submit" class="type02 fRight" id="">SMS발송</button></div>
+          <table class="board_tbl type03">
+            <caption>주문현황 목록</caption>
+            <colgroup>
+              <col style="width:2%"/>
+              <col style="width:5%"/>
+              <col style="width:7%"/>
+              <col style="width:8%"/>
+              <col style="width:7%"/>
+              <col style="width:10%"/>
+              <col style="width:6%"/>
+              <col style="width:4%"/>
+              <col style="width:4%"/>
+              <col style="*"/>
+              <col style="width:5%"/>
+              <col style="width:8%"/>
+              <col style="width:6%"/>
+              <col style="width:6%"/>
+              <col style="width:8%"/>
+            </colgroup>
+            <thead>
+              <tr>
+                <th scope="col">
+                  <input type="checkbox" id="inlineCheckbox11" value="option1">
+                  <label for="inlineCheckbox11" class="checkbox-inline blind">
+                    전체선택
+                  </label>
+                </th>
+                <th scope="col">이름</th>
+                <th scope="col">회원번호</th>
+                <th scope="col">아이디</th>
+                <th scope="col">가입일</th>
+                <th scope="col">이메일</th>
+                <th scope="col">생년월일</th>
+                <th scope="col">성별</th>
+                <th scope="col">등급</th>
+                <th scope="col">최근배송지</th>
+                <th scope="col">총주문</th>
+                <th scope="col">총결제</th>
+                <th scope="col">최근로그인</th>
+                <th scope="col">최근주문</th>
+                <th scope="col">로그인</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <input type="checkbox" id="inlineCheckbox12" value="option1">
+                  <label for="inlineCheckbox12" class="checkbox-inline blind">
+                    선택
+                  </label>
+                </td>
+                <td>홍길동</td>
+                <td>999999999</td>
+                <td>test_id</td>
+                <td>2020-01-01</td>
+                <td>test_id@test.com</td>
+                <td>19900101</td>
+                <td>남</td>
+                <td>일반</td>
+                <td class="tLeft">경남 거제시 상동1길 185-7(상동동)새한마음약국</td>
+                <td>999</td>
+                <td>9,999,999</td>
+                <td>2020-01-01</td>
+                <td>2020-01-01</td>
+                <td><button type="submit" class="type02" id="">WEB</button> <button type="submit" class="type03" id="">MOB</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="inlineCheckbox13" value="option1">
+                  <label for="inlineCheckbox13" class="checkbox-inline blind">
+                    선택
+                  </label>
+                </td>
+                <td>홍길동</td>
+                <td>999999999</td>
+                <td>test_id</td>
+                <td>2020-01-01</td>
+                <td>test_id@test.com</td>
+                <td>19900101</td>
+                <td>남</td>
+                <td>일반</td>
+                <td class="tLeft">경남 거제시 상동1길 185-7(상동동)새한마음약국</td>
+                <td>999</td>
+                <td>9,999,999</td>
+                <td>2020-01-01</td>
+                <td>2020-01-01</td>
+                <td><button type="submit" class="type02" id="">WEB</button> <button type="submit" class="type03" id="">MOB</button></td>
+              </tr>
+              <tr>
+                <td>
+                  <input type="checkbox" id="inlineCheckbox14" value="option1">
+                  <label for="inlineCheckbox14" class="checkbox-inline blind">
+                    선택
+                  </label>
+                </td>
+                <td>홍길동</td>
+                <td>999999999</td>
+                <td>test_id</td>
+                <td>2020-01-01</td>
+                <td>test_id@test.com</td>
+                <td>19900101</td>
+                <td>남</td>
+                <td>일반</td>
+                <td class="tLeft">경남 거제시 상동1길 185-7(상동동)새한마음약국</td>
+                <td>999</td>
+                <td>9,999,999</td>
+                <td>2020-01-01</td>
+                <td>2020-01-01</td>
+                <td><button type="submit" class="type02" id="">WEB</button> <button type="submit" class="type03" id="">MOB</button></td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="paging_navigation">
+            <a href="#" data-ci-pagination-page="2" rel="first" class="first"><span class="first btn "></span></a><a href="#" data-ci-pagination-page="2" rel="prev" class="prev"><span class="prev btn "></span></a><a class="on red">1</a><a href="#" data-ci-pagination-page="2">2</a><a href="#" data-ci-pagination-page="3">3</a><a href="#" data-ci-pagination-page="2" rel="next" class="next"><span class="next btn "></span></a><a href="#" data-ci-pagination-page="2" rel="end" class="end"><span class="end btn "></span></a>
+          </div>
+        </div>
+	    </div>
+    </div>
+  </div><!-- //container -->
+</div>
+</body>
+</html>
