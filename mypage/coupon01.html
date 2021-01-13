@@ -1,0 +1,162 @@
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<meta name="description" content="9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta name="naver-site-verification" content="d25e26ce1709b5f750a575abe33b2948797d1591">
+<meta property="og:type" content="website">
+<meta property="og:title" content="인산가 본사 쇼핑몰 ">
+<meta property="og:description" content="120년 건강본가 인산가, 9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta property="og:image" content="http://m.insanlife.com/images/default/logo.png">
+<meta property="og:url" content="http://m.insanlife.com">
+<title>인산가 본사 쇼핑몰 </title>
+<link rel="stylesheet" href="../common/css/default.css" type="text/css">
+<link rel="stylesheet" href="../common/css/layout.css" type="text/css">
+<script src="../common/js/jquery-3.4.1.min.js"></script>
+<script src="../common/js/scroll.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="gnb">
+				<h1><a href="../main/main.html" class="insanga-logo">인산가로고</a></h1>
+				<a href="#category" class="gnb-category">전체카테고리 보기</a>
+				<div id="gnbBtnArea">
+					<a href="#searchForm" id="search" class="gnb-search">검색</a>
+					<a href="#cart" id="" class="gnb-cart">
+						<span class="none">장바구니</span>
+						<em id="" class="gnb-cart-cnt">3</em>
+					</a> 
+				</div>
+			</div>
+			<hgroup>
+				<a href="javascript:history.back();" class="back_btn">뒤로가기</a>
+				<h2>쿠폰조회</h2>
+			</hgroup>
+		</header>
+		<div id="contents">
+			<div class="coupon_area">
+				<div class="coupon_info">
+					<div class="title">보유 쿠폰</div>
+					<div class="number"><span>3</span>개</div>
+				</div>
+			</div>
+			<div class="coupon_input">
+				<dl>
+					<dt>쿠폰 등록</dt>
+					<dd><input type="text" placeholder="쿠폰번호를 입력해 주세요." name="coupon" id="coupon" value=""/></dd>
+					<div class="btn_area"><button type="submit" class="type10" id="send">등록</button></div>
+				</dl>
+			</div>
+			<div class="tabBox bb_none mt20">
+				<ul class="tabs">
+					<li class="tab-link active" data-tab="tab-1">
+						<a href="#">쿠폰내역</a>
+					</li>
+					<li class="tab-link" data-tab="tab-2">
+						<a href="#">발급가능 쿠폰(2)</a>
+					</li>
+				</ul>
+			</div>
+			<div id="tab-1" class="tab-content active">
+				<fieldset>
+					<div class="table-box">
+						<table class="col_table">
+							<caption></caption>
+							<colgroup>
+								<col style="*">
+								<col style="width:30%">
+								<col style="width:25%">
+							</colgroup>
+							<thead>
+								<tr>
+									<th>내용</th>
+									<th>유효기간</th>
+									<th>할인</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>회원가입 기념 쿠폰<br/>(10,000원 이상 구매시)</td>
+									<td>2020.08.00<br/>~2020.09.00</td>
+									<td class="price">7,000원</td>
+								</tr>
+								<tr>
+									<td>회원가입 기념 쿠폰<br/>(10,000원 이상 구매시)</td>
+									<td>2020.08.00<br/>~2020.09.00</td>
+									<td class="price">7,000원</td>
+								</tr>
+								<tr>
+									<td>회원가입 기념 쿠폰<br/>(10,000원 이상 구매시)</td>
+									<td>2020.08.00<br/>~2020.09.00</td>
+									<td class="price">7,000원</td>
+								</tr>
+							</tbody>
+						</table>
+						<div class="btn_area">
+							<button type="submit" class="type05 wid100" id="login">더보기</button>
+						</div>
+					</div>
+					
+				</fieldset>
+			</div>
+			<div id="tab-2" class="tab-content">
+				<fieldset>
+					<div class="login-box">
+							<ul class="mycoupon_list">
+								<li>
+									<div class="box">
+										<em class="type">주말쿠폰</em>
+										<strong class="discount">	
+											<span class="num">2,000원</span>
+										</strong>
+										<p class="txt">10,000원 이상 구매 시 <span>(~ 21.01.31)</span></p>
+											<button type="button" class="down completion">
+												<span class="in_btn">발급<br>받기</span>
+											</button>
+									</div>
+								</li>
+								<li>
+									<div class="box">
+										<em class="type">평일쿠폰</em>
+										<strong class="discount">	
+											<span class="num">7,000원</span>
+										</strong>
+										<p class="txt">30,000원 이상 구매 시 <span>(~ 21.01.31)</span></p>
+											<button type="button" class="down completion">
+												<span class="in_btn">발급<br>받기</span>
+											</button>
+									</div>
+								</li>
+								<!-- 쿠폰 없을 시 
+								<li class="list_none">발급가능한 쿠폰이 없습니다.</li>
+								-->
+							</ul>
+						</div>
+				</fieldset>
+			</div>
+			<div class="banner_area">
+				<a href="#"><img src="../images/mypage/banner01.png" alt="회원가입과 동시에 멤버십 혜택을~"></a>
+			</div>
+		</div>
+	</div>
+	<script> 
+	$(document).ready(function(){
+	
+	$('ul.tabs li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs li').removeClass('active');
+		$('.tab-content').removeClass('active');
+
+		$(this).addClass('active');
+		$("#"+tab_id).addClass('active');
+	})
+
+})
+</script>
+</body>
+

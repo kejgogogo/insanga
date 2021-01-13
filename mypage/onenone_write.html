@@ -1,0 +1,104 @@
+ <!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="robots" content="all">
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width" />
+<meta name="description" content="9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta name="naver-site-verification" content="d25e26ce1709b5f750a575abe33b2948797d1591">
+<meta property="og:type" content="website">
+<meta property="og:title" content="인산가 본사 쇼핑몰 ">
+<meta property="og:description" content="120년 건강본가 인산가, 9회죽염, 인산죽염, 홍화씨, 유황오리진액, 다슬기진액, 호두액, 죽마고우환 등">
+<meta property="og:image" content="http://m.insanlife.com/images/default/logo.png">
+<meta property="og:url" content="http://m.insanlife.com">
+<title>인산가 본사 쇼핑몰 </title>
+<link rel="stylesheet" href="../common/css/default.css" type="text/css">
+<link rel="stylesheet" href="../common/css/layout.css" type="text/css">
+<script src="../common/js/jquery-3.4.1.min.js"></script>
+<script src="../common/js/scroll.js"></script>
+</head>
+<body>
+	<div id="wrap">
+		<header id="header">
+			<div id="gnb">
+				<h1><a href="../main/main.html" class="insanga-logo">인산가로고</a></h1>
+				<a href="#category" class="gnb-category">전체카테고리 보기</a>
+				<div id="gnbBtnArea">
+					<a href="#searchForm" id="search" class="gnb-search">검색</a>
+					<a href="#cart" id="" class="gnb-cart">
+						<span class="none">장바구니</span>
+						<em id="" class="gnb-cart-cnt">3</em>
+					</a> 
+				</div>
+			</div>
+			<hgroup>
+				<a href="javascript:history.back();" class="back_btn">뒤로가기</a>
+				<h2>1:1문의</h2>
+			</hgroup>
+		</header>
+		<div id="contents">
+			<div class="info_area">
+				<div class="text_box">
+					<ul>
+						<li>언제 어디서나 친절하게 고객님의 문의에 신속히 답변드리겠습니다.</li>
+					</ul>
+				</div>
+			</div>
+			<div class="goods-list top_border">
+				<div class="qna_select">
+					<input name="user_name" id="user_name" title="제목" type="text" class="wid100" placeholder="제목을 30자 이내로 작성해 주세요."/>
+					<div class="flex mt5">
+						<select name="NO_TEL1" id="NO_TEL1" class="wid100 mr5">
+							<option value="">문의 유형을 선택해 주세요.</option>
+							<option value="010">유형1</option>
+							<option value="011">유형2</option>
+						</select>
+						<button type="submit" style="width:150px" class="type04" id="login">주문상품 선택</button>
+					</div>
+				</div>
+				<div class="list-wrapper clearfix">
+					<div class="item" id="tag_search_item" data-search-item-id="1461">
+						<div class="thumb">
+							<a href="#" class="window">
+								<span class="defaultPic"><img src="../images/mypage/sample02.png" alt="9회 자죽염 분말 230g"/></span>
+							</a>
+							<div class="cont">
+								<p class="name"><a href="#">9회 자죽염 분말 230g</a> </p>
+								<p class="number">1개</p>
+								<span class="price">
+			             <p class="price">20,000 원</p>
+			        	</span>
+			        </div>
+						</div>
+						<div class="review_box mt10">
+							<div class="mt10">
+								<textarea class="" name="" id="" rows="10" cols="80" placeholder="궁금하신 사항을 문의하시면 확인 후, 신속히 답변드리겠습니다(300자 이내)"></textarea>
+								<div class="btn_area mt10">
+									<button type="submit" class="type05 wid100" id="login">사진 첨부</button>
+								</div>
+								<div class="picture_area mt10">
+									<div class="picture"><img src="../images/mypage/sample02.png" alt=""/><a href="#" class="del">삭제</a></div>
+									<div class="picture"><img src="../images/mypage/sample01.png" alt=""/><a href="#" class="del">삭제</a></div>
+									<div class="picture"><img src="../images/mypage/sample02.png" alt=""/><a href="#" class="del">삭제</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="btn_area mt30">
+				<button type="submit" class="type07 wid50" id="cancel">취소</button>
+				<button type="submit" class="type06 wid50" id="confirm">확인</button>
+			</div>
+		</div>
+	</div>
+	<script> 
+		$('.starRev span').click(function(){
+	  $(this).parent().children('span').removeClass('on');
+	  $(this).addClass('on').prevAll('span').addClass('on');
+	  return false;
+	});
+	</script>
+</body>
+
